@@ -1,0 +1,4 @@
+.label .text {
+    -fx-stroke: black;
+    -fx-stroke-width: 0.8;
+}

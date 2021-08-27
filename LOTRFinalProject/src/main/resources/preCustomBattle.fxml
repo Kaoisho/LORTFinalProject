@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kaoishoworks.lotrfinalproject.Controllers.preCustomBattleController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/custom_battle.JPG" />
+         </image>
+      </ImageView>
+      <ListView fx:id="heroesList" layoutX="127.0" layoutY="333.0" prefHeight="239.0" prefWidth="357.0" stylesheets="@style/listview.css" />
+      <ListView fx:id="beastsList" layoutX="579.0" layoutY="333.0" prefHeight="239.0" prefWidth="357.0" stylesheets="@style/listview.css" />
+      <AnchorPane layoutX="127.0" layoutY="56.0" prefHeight="253.0" prefWidth="357.0" style="-fx-border-color: #8c6338; -fx-border-width: 1.5;">
+         <children>
+            <Label layoutX="15.0" layoutY="-7.0" prefHeight="61.0" prefWidth="138.0" text="Nombre" textFill="#5b4632">
+               <font>
+                  <Font name="Candara Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="43.0" prefHeight="61.0" prefWidth="138.0" text="Raza" textFill="#5b4632">
+               <font>
+                  <Font name="Candara Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="93.0" prefHeight="61.0" prefWidth="138.0" text="Vida" textFill="#5b4632">
+               <font>
+                  <Font name="Candara Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="143.0" prefHeight="61.0" prefWidth="138.0" text="Armadura" textFill="#5b4632">
+               <font>
+                  <Font name="Candara Italic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameHero" layoutX="186.0" layoutY="12.0" stylesheets="@style/textfield.css" />
+            <TextField fx:id="hpHero" layoutX="186.0" layoutY="112.0" prefHeight="25.0" prefWidth="38.0" stylesheets="@style/textfield.css" />
+            <TextField fx:id="armorHero" alignment="TOP_LEFT" layoutX="186.0" layoutY="161.0" prefHeight="25.0" prefWidth="38.0" stylesheets="@style/textfield.css" />
+            <ChoiceBox fx:id="raceHero" layoutX="186.0" layoutY="62.0" prefWidth="150.0" stylesheets="@style/choicebox.css" />
+            <Button fx:id="addHeroButton" layoutX="110.0" layoutY="200.0" mnemonicParsing="false" onAction="#addHero" prefHeight="35.0" prefWidth="138.0" stylesheets="@style/button.css" text="Añadir">
+               <font>
+                  <Font name="Candara Bold" size="17.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="126.0" layoutY="22.0" stylesheets="@style/labelPreBattle.css" text="Heroes">
+         <font>
+            <Font name="Candara Bold Italic" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7142857142857144" startX="1.0" startY="0.3428571428571429">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8684210777282715" green="0.6787219643592834" blue="0.2693713307380676" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.8761574029922485" blue="0.5046296119689941" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <AnchorPane layoutX="578.0" layoutY="56.0" prefHeight="253.0" prefWidth="357.0" style="-fx-border-color: #8c6338; -fx-border-width: 1.5;">
+         <children>
+            <Label layoutX="15.0" layoutY="-7.0" prefHeight="61.0" prefWidth="138.0" text="Nombre" textFill="#5b4632">
+               <font>
+                  <Font name="Candara Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="43.0" prefHeight="61.0" prefWidth="138.0" text="Raza" textFill="#5b4632">
+               <font>
+                  <Font name="Candara Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="93.0" prefHeight="61.0" prefWidth="138.0" text="Vida" textFill="#5b4632">
+               <font>
+                  <Font name="Candara Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="143.0" prefHeight="61.0" prefWidth="138.0" text="Armadura" textFill="#5b4632">
+               <font>
+                  <Font name="Candara Italic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameBeast" layoutX="186.0" layoutY="12.0" stylesheets="@style/textfield.css" />
+            <TextField fx:id="hpBeast" layoutX="186.0" layoutY="112.0" prefHeight="25.0" prefWidth="38.0" stylesheets="@style/textfield.css" />
+            <TextField fx:id="armorBeast" alignment="TOP_LEFT" layoutX="186.0" layoutY="161.0" prefHeight="25.0" prefWidth="38.0" stylesheets="@style/textfield.css" />
+            <ChoiceBox fx:id="raceBeast" layoutX="186.0" layoutY="62.0" prefWidth="150.0" stylesheets="@style/choicebox.css" />
+            <Button fx:id="addBeastButton" layoutX="110.0" layoutY="200.0" mnemonicParsing="false" onAction="#addBeast" prefHeight="35.0" prefWidth="138.0" stylesheets="@style/button.css" text="Añadir">
+               <font>
+                  <Font name="Candara Bold" size="17.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="578.0" layoutY="22.0" stylesheets="@style/labelPreBattle.css" text="Bestias">
+         <font>
+            <Font name="Candara Bold Italic" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7142857142857144" startX="1.0" startY="0.3428571428571429">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7236841917037964" green="0.2794783413410187" blue="0.003350389888510108" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color opacity="0.5478261113166809" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="upPosHeroButton" layoutX="127.0" layoutY="586.0" mnemonicParsing="false" onAction="#upPositionHero" prefHeight="51.0" prefWidth="104.0" stylesheets="@style/button.css" text="Subir">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="downPosHeroButton" layoutX="254.0" layoutY="586.0" mnemonicParsing="false" onAction="#downPositionHero" prefHeight="51.0" prefWidth="104.0" stylesheets="@style/button.css" text="Bajar">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="clearHeroButton" layoutX="380.0" layoutY="586.0" mnemonicParsing="false" onAction="#clearHero" prefHeight="51.0" prefWidth="104.0" stylesheets="@style/button.css" text="Eliminar">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="upPosBeastButton" layoutX="578.0" layoutY="586.0" mnemonicParsing="false" onAction="#upPositionBeast" prefHeight="51.0" prefWidth="104.0" stylesheets="@style/button.css" text="Subir">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="downPosBeastButton" layoutX="705.0" layoutY="586.0" mnemonicParsing="false" onAction="#downPositionBeast" prefHeight="51.0" prefWidth="104.0" stylesheets="@style/button.css" text="Bajar">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="clearBeastButton" layoutX="831.0" layoutY="586.0" mnemonicParsing="false" onAction="#clearBeast" prefHeight="51.0" prefWidth="104.0" stylesheets="@style/button.css" text="Eliminar">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="startBattleButton" layoutX="1000.0" layoutY="268.0" mnemonicParsing="false" onAction="#toTheBattle" prefHeight="130.0" prefWidth="223.0" stylesheets="@style/button.css" text="¡A la Batalla!">
+         <font>
+            <Font name="Candara Bold" size="35.0" />
+         </font>
+      </Button>
+      <Button fx:id="toTheMenu" layoutX="1101.0" layoutY="24.0" mnemonicParsing="false" onAction="#goToTheMenu" stylesheets="@style/button.css" text="Volver al Menu">
+         <font>
+            <Font name="Candara Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

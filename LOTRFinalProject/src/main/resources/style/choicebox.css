@@ -1,0 +1,24 @@
+.choice-box {
+    -fx-background-radius: 8;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #e6b275 0%, #cd9154 100%),
+        #cd9154,
+        #e6b275,
+        radial-gradient(center 50% 50%, radius 100%, #f1c486, #ce9054);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+}
+.choice-box .menu-item {
+    -fx-padding: 0,0,0,0;
+    -fx-background-color:
+        linear-gradient(from 0% 93% to 0% 100%, #e6b275 0%, #cd9154 100%),
+        #cd9154,
+        #e6b275,
+        radial-gradient(center 50% 50%, radius 100%, #f1c486, #ce9054);
+}
+.choice-box .context-menu {
+    -fx-background-color:
+    linear-gradient(from 0% 93% to 0% 100%, #e6b275 0%, #cd9154 100%),
+            #cd9154,
+            #e6b275,
+            radial-gradient(center 50% 50%, radius 100%, #f1c486, #ce9054);
+}

@@ -1,0 +1,19 @@
+.list-view {
+    -fx-background-color: rgba(193, 158, 148, 0.3);
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: rgba(237, 198, 148, 1);
+    -fx-text-fill: white;
+}
+
+.list-cell:even {
+    -fx-background-color: rgba(255, 209, 148, 0.3);
+}
+.list-cell:odd {
+    -fx-background-color: rgba(199, 163, 116, 0.3);
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: rgba(237, 198, 148, 0.3);
+    -fx-text-fill: white;
+}

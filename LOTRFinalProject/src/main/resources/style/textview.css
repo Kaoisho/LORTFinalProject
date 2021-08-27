@@ -1,0 +1,16 @@
+.text-area {
+    -fx-background-color: rgba(255, 209, 148, 0.2);
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: rgba(255, 209, 148, 0.2);
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: rgba(255, 209, 148, 0.2);
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: rgba(255, 209, 148, 0.2);
+}
